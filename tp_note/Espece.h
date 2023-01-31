@@ -1,12 +1,12 @@
 /*
- * Escpece.h
+ * Espece.h
  *
  *  Created on: 31 janv. 2023
  *      Author: Enzo
  */
 
-#ifndef ESCPECE_H_
-#define ESCPECE_H_
+#ifndef ESPECE_H_
+#define ESPECE_H_
 
 #include "Pouvoir.h"
 
@@ -37,4 +37,4 @@ public:
 	void ajouterElement(Element);
 };
 
-#endif /* ESCPECE_H_ */
+#endif /* ESPECE_H_ */
