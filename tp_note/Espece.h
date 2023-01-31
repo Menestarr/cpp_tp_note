@@ -8,26 +8,33 @@
 #ifndef ESCPECE_H_
 #define ESCPECE_H_
 
+#include "Pouvoir.h"
+
 #include <iostream>
 #include <string>
 #include <vector>
-
-using namespace std;
+#include <string>
 
 class Espece {
 public:
 
-	String nom;
+	string nom;
 	int sante;
 	int magie;
 	int force;
 
-	Pouvoir list_pouvoir;
+	vector<Pouvoir> list_pouvoirs;
 
-	Espece();
+	vector<Element> list_elements;
+
+	Espece(string, int, int, int);
 	virtual ~Espece();
 
-	void Attaquer(Pouvoir, Espece);
+	void attaquer(Pouvoir, Espece);
+
+	void ajouterPouvoir(Pouvoir);
+
+	void ajouterElement(Element);
 };
 
 #endif /* ESCPECE_H_ */
