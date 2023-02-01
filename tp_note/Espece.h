@@ -9,6 +9,7 @@
 #define ESPECE_H_
 
 #include "Pouvoir.h"
+#include "Element.h"
 
 #include <iostream>
 #include <string>
